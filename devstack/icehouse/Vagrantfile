@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
   
   # Set hostname
-  config.vm.hostname = "devstackjuno"
+  config.vm.hostname = "devstackicehouse"
   
   # Provisioning steps
   config.vm.provision :shell, path: "bootstrap.sh", privileged: false

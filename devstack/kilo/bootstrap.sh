@@ -12,5 +12,9 @@ git clone -b stable/kilo https://github.com/openstack-dev/devstack.git
 cd devstack
 wget https://github.com/smakam/openstack/raw/master/juno/local.conf.control
 mv local.conf.control local.conf
+
 # Replace Host IP
-sed -i '/HOST_IP/ c HOST_IP=192.168.59.105' local.conf`
+sed -i '/HOST_IP/ c HOST_IP=192.168.59.105' local.conf
+
+# Do the stacking
+./stack.sh
