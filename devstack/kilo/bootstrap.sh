@@ -10,7 +10,7 @@ sudo apt-get install -y python-dev
 # Download kilo stable devstack
 git clone -b stable/kilo https://github.com/openstack-dev/devstack.git
 cd devstack
-wget https://github.com/smakam/openstack/raw/master/juno/local.conf.control
+wget https://github.com/smakam/openstack/raw/master/kilo/local.conf.control
 mv local.conf.control local.conf
 
 # Replace Host IP
